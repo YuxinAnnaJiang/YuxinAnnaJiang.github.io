@@ -10,300 +10,228 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yuxinannajiang.github.io/">
   <meta name="twitter:card" content="summary">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232775a8'/%3E%3Ctext x='32' y='42' font-size='30' font-family='Georgia,serif' font-weight='700' fill='white' text-anchor='middle'%3EYJ%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231f5f8b'/%3E%3Ctext x='32' y='42' font-size='30' font-family='Georgia,serif' font-weight='700' fill='white' text-anchor='middle'%3EYJ%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <div class="site-shell">
-    <aside class="profile" aria-label="Profile">
-      <a class="brand" href="#top" aria-label="Yuxin Jiang homepage">
-        <span class="brand-mark" aria-hidden="true">YJ</span>
-        <span class="brand-text">Yuxin Jiang</span>
-      </a>
-
-      <div class="portrait" aria-hidden="true">YJ</div>
-
-      <h1>Yuxin (Anna) Jiang</h1>
-      <p class="role">Ph.D. Student in Computer Science</p>
-      <p class="affiliation">University of California, Los Angeles</p>
-      <p class="advisor">AI &amp; Visual Computing Lab<br>Advisor: Prof. Chenfanfu Jiang</p>
-
-      <div class="profile-links" aria-label="External links">
-        <a href="mailto:annaj2178@g.ucla.edu">Email</a>
-        <a href="https://scholar.google.com/citations?user=7D6xIm0AAAAJ&amp;hl=en">Google Scholar</a>
-        <a href="https://github.com/YuxinAnnaJiang">GitHub</a>
-        <a href="https://openreview.net/profile?id=~Yuxin_Jiang6">OpenReview</a>
-        <a href="cv.pdf">CV</a>
-      </div>
-    </aside>
-
-    <main id="main" class="content">
-      <nav class="top-nav" aria-label="Section navigation">
+  <div class="wrapper">
+    <header class="navbar container">
+      <a id="author-name" href="#top">Yuxin (Anna) Jiang</a>
+      <nav id="navlist" aria-label="Section navigation">
         <a href="#about">About</a>
+        <span>/</span>
         <a href="#news">News</a>
+        <span>/</span>
         <a href="#publications">Publications</a>
+        <span>/</span>
         <a href="#experience">Experience</a>
+        <span>/</span>
         <a href="#service">Service</a>
       </nav>
+    </header>
 
-      <section id="top" class="hero-section" aria-labelledby="intro-heading">
-        <p class="eyebrow">Robot learning · world models · embodied AI</p>
-        <h2 id="intro-heading">I build world models and vision-language-action systems for generalizable robot intelligence.</h2>
-        <p class="lead">
-          I am a Ph.D. student in Computer Science at UCLA, advised by Prof. Chenfanfu Jiang. My research focuses on
-          world models, vision-language-action models, and scalable data pipelines that help robots reason about actions
-          before executing them.
+    <hr class="rule">
+
+    <main id="top" class="container content">
+      <section id="about" class="intro">
+        <img class="profile-picture" src="self.png" alt="Yuxin (Anna) Jiang">
+
+        <p>
+          I am a Ph.D. student in Computer Science at the <a href="https://www.ucla.edu/" target="_blank" rel="noreferrer"><strong>University of California, Los Angeles</strong></a>,
+          advised by <a href="https://www.math.ucla.edu/~cffjiang/" target="_blank" rel="noreferrer"><strong>Prof. Chenfanfu Jiang</strong></a> in the
+          <a href="https://www.math.ucla.edu/aivc/" target="_blank" rel="noreferrer"><strong>AI &amp; Visual Computing Laboratory</strong></a>.
+          My research focuses on world models, vision-language-action models, and scalable robot-learning systems.
         </p>
-        <div class="hero-links" aria-label="Primary links">
-          <a href="#publications">Publications</a>
-          <a href="cv.pdf">CV</a>
-          <a href="mailto:annaj2178@g.ucla.edu">Contact</a>
+
+        <p>
+          Before UCLA, I was a machine learning researcher at <strong>AgiBot</strong>, where I worked on EnerVerse-AC,
+          AgiBot World Colosseo, Genie Envisioner, and large-scale embodied AI training systems. I also collaborate
+          with <strong>Nirvana Robotics</strong> on memory-augmented world models and agentic policy generation.
+        </p>
+
+        <p class="links">
+          <a href="mailto:annaj2178@g.ucla.edu"><strong>Email</strong></a>
+          <span>|</span>
+          <a href="https://scholar.google.com/citations?user=7D6xIm0AAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><strong>Google Scholar</strong></a>
+          <span>|</span>
+          <a href="cv.pdf" target="_blank" rel="noreferrer"><strong>CV</strong></a>
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research Interest</h2>
+        <p>
+          I am interested in building robot intelligence that can imagine, evaluate, and execute actions in complex
+          environments. A few questions that drive my current work are:
+        </p>
+        <ul>
+          <li><strong>World Models:</strong> How can robots use memory and predictive video models to reason over long-horizon manipulation?</li>
+          <li><strong>Vision-Language-Action Models:</strong> How can multimodal foundation models generate actions that transfer across tasks and embodiments?</li>
+          <li><strong>Scalable Robot Data:</strong> How can simulation, human videos, and generative models reduce the cost of learning robust manipulation skills?</li>
+        </ul>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <div id="news-scroll">
+          <ul>
+            <li><strong>2026-09:</strong> Began my Ph.D. in Computer Science at UCLA.</li>
+            <li><strong>2026-08:</strong> <strong>MemoryVAM</strong> was accepted to CoRL 2026.</li>
+            <li><strong>2026-08:</strong> Released the <strong>SUN</strong> preprint.</li>
+            <li><strong>2026-07:</strong> <strong>MemoryVAM</strong> and <strong>FetchMan</strong> were accepted to RSS 2026 workshops.</li>
+            <li><strong>2026-01:</strong> <strong>Genie Envisioner</strong> was accepted to ICLR 2026.</li>
+            <li><strong>2025-12:</strong> <strong>EnerVerse-AC</strong> received an Outstanding Paper Award and oral presentation at the NeurIPS 2025 Embodied World Models Workshop.</li>
+            <li><strong>2025-10:</strong> <strong>AgiBot World Colosseo</strong> was named a Best Paper Award Finalist at IROS 2025.</li>
+          </ul>
         </div>
       </section>
 
-      <section id="about" aria-labelledby="about-heading">
-        <div class="section-heading">
-          <h2 id="about-heading">About</h2>
-        </div>
-        <div class="prose">
-          <p>
-            Before starting my Ph.D., I was a machine learning researcher at AgiBot, where I led EnerVerse-AC and
-            contributed to AgiBot World Colosseo, Genie Envisioner, and large-scale embodied AI training systems. I also
-            collaborate remotely with Nirvana Robotics on world-model memory and policy generation for manipulation.
-          </p>
-          <p>
-            I hold a B.Sc. in Mathematics with Statistics for Finance from Imperial College London. My broader interests
-            include video generation, robot manipulation, reinforcement learning, and data engines for embodied agents.
-          </p>
-        </div>
-      </section>
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="legend">* indicates equal contribution.</p>
 
-      <section id="news" aria-labelledby="news-heading">
-        <div class="section-heading">
-          <h2 id="news-heading">News</h2>
-        </div>
-        <ol class="news-list">
-          <li>
-            <time datetime="2026-09">Sep 2026</time>
-            <span>Began my Ph.D. in Computer Science at UCLA.</span>
-          </li>
-          <li>
-            <time datetime="2026-08">Aug 2026</time>
-            <span><strong>MemoryVAM</strong> was accepted to CoRL 2026.</span>
-          </li>
-          <li>
-            <time datetime="2026-08">Aug 2026</time>
-            <span>Released two preprints: <strong>RoboEdit</strong> and <strong>SUN</strong>.</span>
-          </li>
-          <li>
-            <time datetime="2026-07">Jul 2026</time>
-            <span><strong>MemoryVAM</strong> and <strong>FetchMan</strong> were accepted to RSS 2026 workshops.</span>
-          </li>
-          <li>
-            <time datetime="2026-04">Apr 2026</time>
-            <span><strong>AgiBot World Colosseo</strong> was accepted to IEEE Transactions on Robotics.</span>
-          </li>
-        </ol>
-      </section>
-
-      <section id="publications" aria-labelledby="publications-heading">
-        <div class="section-heading">
-          <h2 id="publications-heading">Selected Publications</h2>
-          <p>* denotes equal contribution.</p>
-        </div>
-
-        <article class="publication">
-          <a class="paper-thumb" href="https://MemoryVAM.github.io/" aria-label="MemoryVAM project page">
-            <img src="assets/papers/memoryvam.png" alt="First page preview of the MemoryVAM paper" loading="lazy">
-          </a>
-          <div class="paper-body">
+        <article class="pub-item selected">
+          <div class="pub-image">
+            <img src="assets/papers/memoryvam.png" alt="MemoryVAM paper preview" loading="lazy">
+          </div>
+          <div class="pub-main">
             <h3>MemoryVAM: Integrating Memory into Video Action Model for Robot Manipulation</h3>
-            <p class="authors"><strong>Yuxin Jiang</strong>, Chang Yu, Yunuo Chen, Xiang Feng, Yin Yang, Nishank Gite, Chenfanfu Jiang</p>
-            <p class="venue">Conference on Robot Learning (CoRL), 2026 <span>First author</span></p>
-            <p class="note">Also accepted at the RSS 2026 Workshop on Robot World Models.</p>
-            <p class="paper-links">
-              <a href="https://MemoryVAM.github.io/">Project</a>
-              <a href="https://arxiv.org/abs/2606.20679">arXiv</a>
+            <p><strong>Yuxin Jiang</strong>, Chang Yu, Yunuo Chen, Xiang Feng, Yin Yang, Nishank Gite, Chenfanfu Jiang</p>
+            <p><em>Conference on Robot Learning (CoRL), 2026</em> <span class="badge">Selected</span> <span class="badge">First Author</span></p>
+            <p><em>RSS 2026 Workshop on Robot World Models</em></p>
+            <p class="pub-links">
+              <a href="https://MemoryVAM.github.io/" target="_blank" rel="noreferrer">Project</a>
+              <span>|</span>
+              <a href="https://arxiv.org/abs/2606.20679" target="_blank" rel="noreferrer">Paper</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
-          <a class="paper-thumb" href="https://genie-envisioner.github.io/" aria-label="Genie Envisioner project page">
-            <img src="assets/papers/genie-envisioner.png" alt="First page preview of the Genie Envisioner paper" loading="lazy">
-          </a>
-          <div class="paper-body">
-            <h3>Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation</h3>
-            <p class="authors">Yue Liao, Pengfei Zhou, Siyuan Huang, Donglin Yang, Shengcong Chen, <strong>Yuxin Jiang</strong>, Yue Hu, Si Liu, Jianlan Luo, Liliang Chen, Shuicheng Yan, Maoqing Yao, Guanghui Ren</p>
-            <p class="venue">International Conference on Learning Representations (ICLR), 2026</p>
-            <p class="paper-links">
-              <a href="https://genie-envisioner.github.io/">Project</a>
-              <a href="https://arxiv.org/abs/2508.05635">arXiv</a>
-              <a href="https://github.com/AgibotTech/Genie-Envisioner-V1">Code</a>
-            </p>
+        <article class="pub-item selected">
+          <div class="pub-image">
+            <img src="assets/papers/enerverse-ac.png" alt="EnerVerse-AC paper preview" loading="lazy">
           </div>
-        </article>
-
-        <article class="publication">
-          <a class="paper-thumb" href="https://arxiv.org/abs/2608.18948" aria-label="RoboEdit arXiv page">
-            <img src="assets/papers/roboedit.png" alt="First page preview of the RoboEdit paper" loading="lazy">
-          </a>
-          <div class="paper-body">
-            <h3>RoboEdit: Turning Human Manipulation Videos into Scalable Robot Experience</h3>
-            <p class="authors">Yuxin Guo, Zhengyi Tao, <strong>Yuxin Jiang</strong>, Yunuo Chen, Zhuo Dou, Yiheng Ma, Yin Yang, Demetri Terzopoulos, Chenfanfu Jiang</p>
-            <p class="venue">arXiv preprint, 2026</p>
-            <p class="paper-links">
-              <a href="https://arxiv.org/abs/2608.18948">arXiv</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="publication">
-          <a class="paper-thumb" href="https://orayyan.com/fetchman" aria-label="FetchMan project page">
-            <img src="assets/papers/fetchman.png" alt="First page preview of the FetchMan paper" loading="lazy">
-          </a>
-          <div class="paper-body">
-            <h3>FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences</h3>
-            <p class="authors">Omar Rayyan, Zhi Li, Max Argus, <strong>Yuxin Jiang</strong>, Chang Yu, Chenfanfu Jiang, Yuchen Cui</p>
-            <p class="venue">RSS 2026 Workshop on Whole-Body Control and Bimanual Manipulation</p>
-            <p class="paper-links">
-              <a href="https://orayyan.com/fetchman">Project</a>
-              <a href="https://arxiv.org/abs/2608.17027">arXiv</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="publication">
-          <div class="paper-thumb paper-initials" aria-hidden="true">SUN</div>
-          <div class="paper-body">
-            <h3>SUN: Persistent Programs for Language-Grounded Control-to-Learning-to-Real Policies</h3>
-            <p class="authors">with <strong>Yuxin Jiang</strong> and collaborators</p>
-            <p class="venue">arXiv preprint, 2026</p>
-            <p class="paper-links">
-              <a href="https://arxiv.org/abs/2608.31167">arXiv</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="publication">
-          <a class="paper-thumb" href="https://annaj2178.github.io/EnerverseAC.github.io/" aria-label="EnerVerse-AC project page">
-            <img src="assets/papers/enerverse-ac.png" alt="First page preview of the EnerVerse-AC paper" loading="lazy">
-          </a>
-          <div class="paper-body">
+          <div class="pub-main">
             <h3>EnerVerse-AC: Envisioning Embodied Environments with Action Condition</h3>
-            <p class="authors"><strong>Yuxin Jiang*</strong>, Shengcong Chen*, Siyuan Huang*, Liliang Chen, Pengfei Zhou, Yue Liao, Xindong He, Chiming Liu, Hongsheng Li, Maoqing Yao, Guanghui Ren</p>
-            <p class="venue">NeurIPS 2025 Workshop on Embodied World Models for Decision Making <span>Oral</span> <span>Outstanding Paper</span></p>
-            <p class="note">Official baseline model for the world-model track of the AgiBot World Challenge at ICRA 2026.</p>
-            <p class="paper-links">
-              <a href="https://annaj2178.github.io/EnerverseAC.github.io/">Project</a>
-              <a href="https://arxiv.org/abs/2505.09723">arXiv</a>
-              <a href="https://github.com/AgibotTech/AgiBotWorldChallengeICRA2026-WorldModelBaseline">Baseline</a>
+            <p><strong>Yuxin Jiang*</strong>, Shengcong Chen*, Siyuan Huang*, Liliang Chen, Pengfei Zhou, Yue Liao, Xindong He, Chiming Liu, Hongsheng Li, Maoqing Yao, Guanghui Ren</p>
+            <p><em>NeurIPS 2025 Workshop on Embodied World Models for Decision Making</em> <span class="badge">Selected</span> <span class="badge">Oral</span> <span class="badge">Outstanding Paper</span></p>
+            <p>Official baseline model for the world-model track of the AgiBot World Challenge at ICRA 2026.</p>
+            <p class="pub-links">
+              <a href="https://annaj2178.github.io/EnerverseAC.github.io/" target="_blank" rel="noreferrer">Project</a>
+              <span>|</span>
+              <a href="https://arxiv.org/abs/2505.09723" target="_blank" rel="noreferrer">Paper</a>
+              <span>|</span>
+              <a href="https://github.com/AgibotTech/AgiBotWorldChallengeICRA2026-WorldModelBaseline" target="_blank" rel="noreferrer">Baseline</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
-          <a class="paper-thumb" href="https://arxiv.org/abs/2503.06669" aria-label="AgiBot World Colosseo arXiv page">
-            <img src="assets/papers/agibot-world.png" alt="First page preview of the AgiBot World Colosseo paper" loading="lazy">
-          </a>
-          <div class="paper-body">
+        <article class="pub-item selected">
+          <div class="pub-image">
+            <img src="assets/papers/agibot-world.png" alt="AgiBot World Colosseo paper preview" loading="lazy">
+          </div>
+          <div class="pub-main">
             <h3>AgiBot World Colosseo: A Large-Scale Manipulation Platform for Scalable and Intelligent Embodied Systems</h3>
-            <p class="authors">Qingwen Bu, Guanghui Ren, Chiming Liu, Modi Shi, ..., <strong>Yuxin Jiang</strong>, ..., Hongyang Li, Yu Qiao, Maoqing Yao (AgiBot World Team)</p>
-            <p class="venue">IEEE Transactions on Robotics, 2026; IROS 2025 <span>Best Paper Finalist</span></p>
-            <p class="paper-links">
-              <a href="https://arxiv.org/abs/2503.06669">arXiv</a>
-              <a href="https://github.com/OpenDriveLab/AgiBot-World">Code</a>
+            <p>Qingwen Bu, Guanghui Ren, Chiming Liu, Modi Shi, ..., <strong>Yuxin Jiang</strong>, ..., Hongyang Li, Yu Qiao, Maoqing Yao (AgiBot World Team)</p>
+            <p><em>IEEE Transactions on Robotics, 2026</em> <span class="badge">Selected</span></p>
+            <p><em>IROS 2025</em> <span class="badge">Best Paper Finalist</span></p>
+            <p class="pub-links">
+              <a href="https://arxiv.org/abs/2503.06669" target="_blank" rel="noreferrer">Paper</a>
+              <span>|</span>
+              <a href="https://github.com/OpenDriveLab/AgiBot-World" target="_blank" rel="noreferrer">Code</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
-          <a class="paper-thumb" href="https://genie-centurion.github.io/" aria-label="Genie Centurion project page">
-            <img src="assets/papers/genie-centurion.png" alt="First page preview of the Genie Centurion paper" loading="lazy">
-          </a>
-          <div class="paper-body">
+        <article class="pub-item">
+          <div class="pub-image">
+            <img src="assets/papers/genie-envisioner.png" alt="Genie Envisioner paper preview" loading="lazy">
+          </div>
+          <div class="pub-main">
+            <h3>Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation</h3>
+            <p>Yue Liao, Pengfei Zhou, Siyuan Huang, Donglin Yang, Shengcong Chen, <strong>Yuxin Jiang</strong>, Yue Hu, Si Liu, Jianlan Luo, Liliang Chen, Shuicheng Yan, Maoqing Yao, Guanghui Ren</p>
+            <p><em>International Conference on Learning Representations (ICLR), 2026</em></p>
+            <p class="pub-links">
+              <a href="https://genie-envisioner.github.io/" target="_blank" rel="noreferrer">Project</a>
+              <span>|</span>
+              <a href="https://arxiv.org/abs/2508.05635" target="_blank" rel="noreferrer">Paper</a>
+              <span>|</span>
+              <a href="https://github.com/AgibotTech/Genie-Envisioner-V1" target="_blank" rel="noreferrer">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-image">
+            <img src="assets/papers/fetchman.png" alt="FetchMan paper preview" loading="lazy">
+          </div>
+          <div class="pub-main">
+            <h3>FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences</h3>
+            <p>Omar Rayyan, Zhi Li, Max Argus, <strong>Yuxin Jiang</strong>, Chang Yu, Chenfanfu Jiang, Yuchen Cui</p>
+            <p><em>RSS 2026 Workshop on Whole-Body Control and Bimanual Manipulation</em></p>
+            <p class="pub-links">
+              <a href="https://orayyan.com/fetchman" target="_blank" rel="noreferrer">Project</a>
+              <span>|</span>
+              <a href="https://arxiv.org/abs/2608.17027" target="_blank" rel="noreferrer">Paper</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-image pub-text-image">SUN</div>
+          <div class="pub-main">
+            <h3>SUN: Persistent Programs for Language-Grounded Control-to-Learning-to-Real Policies</h3>
+            <p>with <strong>Yuxin Jiang</strong> and collaborators</p>
+            <p><em>arXiv preprint, 2026</em></p>
+            <p class="pub-links">
+              <a href="https://arxiv.org/abs/2608.31167" target="_blank" rel="noreferrer">Paper</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-image">
+            <img src="assets/papers/genie-centurion.png" alt="Genie Centurion paper preview" loading="lazy">
+          </div>
+          <div class="pub-main">
             <h3>Genie Centurion: Accelerating Scalable Real-World Robot Training with Human Rewind-and-Refine Guidance</h3>
-            <p class="authors">Wenhao Wang, Jianheng Song, Chiming Liu, Jiayao Ma, Siyuan Feng, Jingyuan Wang, <strong>Yuxin Jiang</strong>, Kylin Chen, Sikang Zhan, Yi Wang, Tong Meng, Modi Shi, Xindong He, Guanghui Ren, Yang Yang, Maoqing Yao</p>
-            <p class="venue">arXiv preprint, 2025</p>
-            <p class="paper-links">
-              <a href="https://genie-centurion.github.io/">Project</a>
-              <a href="https://arxiv.org/abs/2505.18793">arXiv</a>
+            <p>Wenhao Wang, Jianheng Song, Chiming Liu, Jiayao Ma, Siyuan Feng, Jingyuan Wang, <strong>Yuxin Jiang</strong>, Kylin Chen, Sikang Zhan, Yi Wang, Tong Meng, Modi Shi, Xindong He, Guanghui Ren, Yang Yang, Maoqing Yao</p>
+            <p><em>arXiv preprint, 2025</em></p>
+            <p class="pub-links">
+              <a href="https://genie-centurion.github.io/" target="_blank" rel="noreferrer">Project</a>
+              <span>|</span>
+              <a href="https://arxiv.org/abs/2505.18793" target="_blank" rel="noreferrer">Paper</a>
             </p>
           </div>
         </article>
       </section>
 
-      <section id="experience" aria-labelledby="experience-heading">
-        <div class="section-heading">
-          <h2 id="experience-heading">Experience</h2>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <time>2026.09 - present</time>
-            <div>
-              <h3>University of California, Los Angeles</h3>
-              <p>Ph.D. Student, Computer Science. AI &amp; Visual Computing Laboratory.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>2026.01 - present</time>
-            <div>
-              <h3>Nirvana Robotics</h3>
-              <p>Research Collaborator. World-model memory and agentic policy generation for robot manipulation.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>2025.09 - 2026.07</time>
-            <div>
-              <h3>UCLA Artificial Intelligence &amp; Visual Computing Laboratory</h3>
-              <p>Visiting Researcher. Generative AI and world models for robotics.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>2024.06 - 2025.08</time>
-            <div>
-              <h3>AgiBot AI Research Institute</h3>
-              <p>Machine Learning Researcher. Core contributor to EnerVerse-AC, AgiBot World, and embodied AI training systems.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>2024.01 - 2024.05</time>
-            <div>
-              <h3>Ant Group AI Digital Human Institute</h3>
-              <p>ML Engineer and Technical PM Intern. Real-time 3D digital human systems in Unreal Engine 5.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>2020.10 - 2023.08</time>
-            <div>
-              <h3>Imperial College London</h3>
-              <p>B.Sc. in Mathematics with Statistics for Finance.</p>
-            </div>
-          </div>
-        </div>
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul class="plain-list">
+          <li><strong>University of California, Los Angeles</strong>, Ph.D. Student in Computer Science, 2026.09-present.</li>
+          <li><strong>Nirvana Robotics</strong>, Research Collaborator, 2026.01-present.</li>
+          <li><strong>UCLA AI &amp; Visual Computing Laboratory</strong>, Visiting Researcher, 2025.09-2026.07.</li>
+          <li><strong>AgiBot AI Research Institute</strong>, Machine Learning Researcher, 2024.06-2025.08.</li>
+          <li><strong>Ant Group AI Digital Human Institute</strong>, ML Engineer and Technical PM Intern, 2024.01-2024.05.</li>
+          <li><strong>Imperial College London</strong>, B.Sc. in Mathematics with Statistics for Finance, 2020.10-2023.08.</li>
+        </ul>
       </section>
 
-      <section id="service" aria-labelledby="service-heading">
-        <div class="section-heading">
-          <h2 id="service-heading">Awards &amp; Service</h2>
-        </div>
-        <ul class="compact-list">
-          <li><strong>Outstanding Paper Award</strong>, NeurIPS 2025 Workshop on Embodied World Models for Decision Making.</li>
-          <li><strong>Oral presentation</strong>, NeurIPS 2025 Workshop on Embodied World Models for Decision Making.</li>
+      <section id="service">
+        <h2>Awards &amp; Service</h2>
+        <ul class="plain-list">
+          <li><strong>Outstanding Paper Award</strong> and <strong>Oral Presentation</strong>, NeurIPS 2025 Workshop on Embodied World Models for Decision Making.</li>
           <li><strong>Best Paper Award Finalist</strong>, IROS 2025.</li>
           <li><strong>Reviewer</strong>, Conference on Robot Learning (CoRL), 2026.</li>
           <li><strong>Member</strong>, IEEE.</li>
         </ul>
       </section>
 
+      <hr class="rule">
+
       <footer>
-        <span>© 2026 Yuxin Jiang</span>
-        <span>Last updated September 2026</span>
+        <small>© 2026 Yuxin Jiang</small>
       </footer>
     </main>
   </div>
